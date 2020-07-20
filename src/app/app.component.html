@@ -1,0 +1,30 @@
+<header>
+  <div style="height: 120px;">
+    <img src="assets/logo.png" align="left" />
+    <h1>Pesquisa Repositórios GitHub Por Linguagem</h1>
+  </div>
+</header>
+
+<div class="wrapper">
+  <div class="seleciona-linguagem">
+    <input type="text" [(ngModel)]="linguagem" style="height: 40px; min-width: 400px;"/>
+
+    <button style="height: 40px; margin: 10px;"
+    id="btnProcessa"
+    class="btn btn-primary"
+    type="button"
+    [disabled]="processando"
+    (click)="buscaRepositorios()"
+  >
+    <span
+      [ngClass]="{ 'spinner-border spinner-border-sm': processando }"
+      role="status"
+      aria-hidden="true"
+    ></span>
+    {{ textoBotao }}
+  </button>
+  </div>
+
+  <app-lista-repositorios></app-lista-repositorios>
+</div>
+

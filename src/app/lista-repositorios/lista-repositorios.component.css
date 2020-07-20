@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+  padding: 50px;
+  background-color: #e7ecf3;
+}
+
+ .mat-header-cell {
+  flex-direction: column;
+  justify-content: left;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.mat-paginator {
+  background-color: #E4EBF5;
+}
+
+.mat-header-cell.header-text-left { text-align: left; }
+.mat-header-cell.header-text-center { text-align: center; }
+
+.mat-cell.cell-text-left { text-align: left; }
+.mat-cell.cell-text-right { text-align: right; }
+.mat-cell.cell-text-center { text-align: center; }
+
+mat-icon {
+  color: #6314ef;;
+}
+
+.mat-cell {
+  text-align: left;
+  justify-content:center;
+}
